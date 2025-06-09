@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Sign up</title>
+
+    <style>
+body, html{
+    background-color: #f2f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+ 
+    }
+
+
+  form label{
+    display:block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+form input{
+    width: 100%;
+    padding:5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    }
+
+    form input:focus{
+        border-color: #007bff;
+        outline: nones;
+    }
+
+    .sign-up{
+        margin-top: 5px;
+        width:100%;
+        padding:6px;
+        background-color: #007bff;
+        color:#fff;
+        font-weight: bold;
+        font-size : 16px;
+        border:none;
+        border-radius: 8px;
+        cursor:pointer;
+        transition:backgound-color 0.3s ease;
+        
+
+    }
+.sign-up:hover{
+    opacity: 0.9;
+}
+
+.sign-up:active{
+    opacity: 0.5;
+}
+
+fieldset {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+legend{
+    font-weight: bold;
+    font-size: 14px;
+    padding:2px;
+    color: #007bff;
+}
+
+input::placeholder{
+    color:#999;
+    font-style: italic;
+}
+    
+    </style>
+</head>
+<body>
+  <fieldset>
+<legend> Sign Up</legend>
+<form action="">
+
+<label for="fname">First Name </label>
+<input type="text" name="" id="fname" placeholder="John" maxlength="25" required>
+
+<label for="lname">Last Name </label>
+<input type="text" name="" id="lname" placeholder="Doe" maxlength="25" required>
+
+<label for="mail">E-mail </label>
+<input type="email" name="" id="mail" placeholder="johndoe@gmail.com" maxlength="25" required>
+
+<label for="pnumber">Phone Number </label>
+<input type="phone" name="" id="pnumber" placeholder="+23480785432" maxlength="11" required>
+
+<label for="psword">Choose a password </label>
+<input type="password" name="" id="psword" placeholder="password" maxlength="25" required>
+
+<label for="confirmpsword">Confirm password </label>
+<input type="password" name="" id="confirmpsword" placeholder="Confirm password" maxlength="25" required>
+
+<button class="sign-up" type="submit"> Sign up</button>
+
+
+
+
+</form>
+
+
+  </fieldset>  
+</body>
+</html>
